@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block titulo%}Bandeja de Solicitudes{% endblock%}
+
+{% block contenido%}
+    <h1>Bandeja de Solicitudes</h1>
+    <p>Aqui llenaremos las solicitudes pendientes</p>
+    <div class="card">
+        <div class="card-header">Solicitudes de amistad.</div>
+        <div class="card-body">
+            <h4 class="card-title">Solicitudes</h4>
+            <div
+                class="table-responsive"
+            >
+                <table
+                    class="table table-primary"
+                >
+                    <thead>
+                        <tr>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td>imagen.jpg</td>
+                            <td>Jordy el NP</td>
+                            <td>Aceptar | Rechazar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    
+{% endblock%}
